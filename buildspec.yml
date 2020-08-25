@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  variables:
+    APPLICATION: "@dananb/navbar"
+
 phases:
   install:
     commands:
@@ -16,7 +20,7 @@ phases:
       - yarn
   build:
     commands:
-      - echo Building ${CODEBUILD_RESOLVED_SOURCE_VERSION}
+      - echo Building $APPLICATION
       - yarn build
 artifacts:
   files:
