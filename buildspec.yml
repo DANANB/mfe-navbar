@@ -16,7 +16,7 @@ phases:
       - yarn
   build:
     commands:
-      - echo Building...
+      - echo Building $CODEBUILD_RESOLVED_SOURCE_VERSION
       - yarn build
 artifacts:
   files:
