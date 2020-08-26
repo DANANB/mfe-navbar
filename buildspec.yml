@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    APPLICATION: "@dananb/navbar"
-
 phases:
   install:
     commands:
@@ -20,7 +16,7 @@ phases:
       - yarn
   build:
     commands:
-      - echo Building $APPLICATION
+      - echo Building...
       - yarn build
 artifacts:
   files:
