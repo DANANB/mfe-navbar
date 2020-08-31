@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Root(props) {
   return (
     <Router>
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
         <Navbar.Brand href="/">{props.name}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
